@@ -6,7 +6,7 @@ export default ({ children }) => (
   <div>
     <Meta />
     <div className="flex flex-col lg:flex-row h-screen">
-      <div className="flex-grow-0 bg-red-400">
+      <div className="flex-grow-0">
         <Header />
       </div>
       <div className="flex-grow">{children}</div>

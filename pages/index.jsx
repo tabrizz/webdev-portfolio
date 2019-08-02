@@ -4,9 +4,9 @@ import Page from "../layouts/main";
 const index = () => {
   return (
     <Page>
-      <div className="bg-green-700 p-4">
+      <div className="main-container">
         <h1 className="text-white">Hello World</h1>
-        <div>
+        <div className="fullname-logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="755.906"
