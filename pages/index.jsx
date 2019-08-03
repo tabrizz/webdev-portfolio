@@ -6,6 +6,7 @@ const index = () => {
     <Page>
       <div className="main-container">
         <h1 className="text-white">Hello World</h1>
+        <div className="fullname-logo__background" />
         <div className="fullname-logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
