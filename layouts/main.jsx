@@ -9,7 +9,7 @@ export default ({ children }) => (
       <div className="flex-grow-0">
         <Header />
       </div>
-      <div className="flex-grow">{children}</div>
+      <div className="flex-grow main-container">{children}</div>
     </div>
   </div>
 );

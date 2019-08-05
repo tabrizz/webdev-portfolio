@@ -6,7 +6,7 @@ export default () => (
       <div>
         <a href="#" className="flex items-center lg:flex-col">
           <svg
-            className="h-20 w-20"
+            className="h-12 w-12 md:h-20 md:w-20"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             width="250"
@@ -82,28 +82,28 @@ export default () => (
         </button>
       </div>
       <div className="hidden lg:block py-2 lg:p-2">
-        <ul className="flex-col">
-          <li>
+        <ul className="flex-col text-center">
+          <li className="mb-4">
             <Link href="/">
               <a className="uppercase text-sm">Home</a>
             </Link>
           </li>
-          <li>
+          <li className="mb-4">
             <Link href="/about">
               <a className="uppercase text-sm">About</a>
             </Link>
           </li>
-          <li>
+          <li className="mb-4">
             <Link href="/skills">
               <a className="uppercase text-sm">Skills</a>
             </Link>
           </li>
-          <li>
+          <li className="mb-4">
             <Link href="/portfolio">
-              <a className="uppercase text-sm">My Work</a>
+              <a className="uppercase text-sm">Portfolio</a>
             </Link>
           </li>
-          <li>
+          <li className="mb-4">
             <Link href="/contact">
               <a className="uppercase text-sm">Contact</a>
             </Link>

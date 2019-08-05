@@ -7,15 +7,20 @@
 .main-container {
   @apply bg-gray-dark;
   @apply relative;
-  @apply h-screen;
+  height: calc(100vh - 96px);
   @apply w-full;
 }
 
 .fullname-logo {
-  @apply absolute;
-  @apply h-48;
-  @apply w-auto;
-  top: 50%;
+  height: 6rem;
+  width: auto;
+}
+
+.fullname-container {
+  position: absolute;
+  height: 6rem;
+  width: auto;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
@@ -29,5 +34,73 @@
     @apply h-full;
     z-index: -1;
     background-image: url("/static/assets/logo-background.jpg");
+    background-position: center;
+    animation: move 30s infinite linear;
+    will-change: transform;
+  }
+}
+
+@screen md {
+  .main-container {
+    height: calc(100vh - 96px);
+  }
+  .fullname-logo {
+    height: 11rem;
+    width: auto;
+  }
+
+  .fullname-container {
+    height: 11rem;
+    width: auto;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@screen lg {
+  .main-container {
+    @apply h-screen;
+  }
+  .fullname-logo {
+    height: 15rem;
+    width: auto;
+  }
+
+  .fullname-container {
+    height: 15rem;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@screen xl {
+  .fullname-logo {
+    height: 19rem;
+    width: auto;
+  }
+
+  .fullname-container {
+    height: 19rem;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(50px) translateX(0);
+  }
+
+  50% {
+    transform: translateY(0px) translateX(50px);
+  }
+
+  75% {
+    transform: translateY(50px) translateX(0);
   }
 }
