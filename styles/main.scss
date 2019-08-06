@@ -12,7 +12,6 @@
 }
 
 .fullname-logo {
-  clip-path: url(#clipLogo);
   height: 2.5rem;
   width: auto;
 }
@@ -20,6 +19,7 @@
 .fullname-container {
   background: linear-gradient(311deg, #d70070, #e000ec, #00c5ff, #00f560);
   background-size: 800% 800%;
+  clip-path: url(#clipLogo);
 
   animation: AnimationName 22s ease infinite;
 
@@ -35,7 +35,7 @@
     }
   }
   position: absolute;
-  height: 2.5rem;
+  height: 10.5rem;
   width: auto;
   top: 30%;
   left: 50%;
