@@ -5,39 +5,58 @@
 @tailwind utilities;
 
 .main-container {
-  @apply bg-gray-dark;
-  @apply relative;
+  background-color: #151515;
+  position: relative;
   height: calc(100vh - 96px);
   @apply w-full;
 }
 
 .fullname-logo {
-  height: 6rem;
+  clip-path: url(#clipLogo);
+  height: 2.5rem;
   width: auto;
 }
 
 .fullname-container {
+  background: linear-gradient(311deg, #d70070, #e000ec, #00c5ff, #00f560);
+  background-size: 800% 800%;
+
+  animation: AnimationName 22s ease infinite;
+
+  @keyframes AnimationName {
+    0% {
+      background-position: 26% 0%;
+    }
+    50% {
+      background-position: 75% 100%;
+    }
+    100% {
+      background-position: 26% 0%;
+    }
+  }
   position: absolute;
-  height: 6rem;
+  height: 2.5rem;
   width: auto;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  z-index: 0;
 
   &::before {
     content: "";
-    @apply absolute;
-    top: -1;
-    @apply left-0;
-    @apply w-full;
-    @apply h-full;
-    z-index: -1;
-    background-image: url("/static/assets/logo-background.jpg");
-    background-position: center;
-    animation: move 30s infinite linear;
-    will-change: transform;
   }
+}
+
+.logo-subtitle {
+  position: absolute;
+  height: 2rem;
+  width: 18rem;
+  top: 40%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  background-color: aqua;
+  transform: skew(-10deg);
 }
 
 @screen md {
@@ -45,16 +64,24 @@
     height: calc(100vh - 96px);
   }
   .fullname-logo {
-    height: 11rem;
+    height: 5rem;
     width: auto;
   }
 
   .fullname-container {
-    height: 11rem;
+    height: 5rem;
     width: auto;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .logo-subtitle {
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: aqua;
+    transform: skew(-10deg);
   }
 }
 
@@ -63,44 +90,46 @@
     @apply h-screen;
   }
   .fullname-logo {
-    height: 15rem;
+    height: 5rem;
     width: auto;
   }
 
   .fullname-container {
-    height: 15rem;
+    height: 5rem;
     width: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .logo-subtitle {
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: aqua;
+    transform: skew(-10deg);
   }
 }
 
 @screen xl {
   .fullname-logo {
-    height: 19rem;
+    height: 5rem;
     width: auto;
   }
 
   .fullname-container {
-    height: 19rem;
+    height: 5rem;
     width: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
 
-@keyframes move {
-  25% {
-    transform: translateY(50px) translateX(0);
-  }
-
-  50% {
-    transform: translateY(0px) translateX(50px);
-  }
-
-  75% {
-    transform: translateY(50px) translateX(0);
+  .logo-subtitle {
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: aqua;
+    transform: skew(-10deg);
   }
 }
