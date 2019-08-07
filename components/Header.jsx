@@ -85,27 +85,27 @@ export default () => (
         <ul className="flex-col text-center">
           <li className="mb-4">
             <Link href="/">
-              <a className="uppercase text-sm">Home</a>
+              <a className="uppercase text-xs">Home</a>
             </Link>
           </li>
           <li className="mb-4">
             <Link href="/about">
-              <a className="uppercase text-sm">About</a>
+              <a className="uppercase text-xs">About</a>
             </Link>
           </li>
           <li className="mb-4">
             <Link href="/skills">
-              <a className="uppercase text-sm">Skills</a>
+              <a className="uppercase text-xs">Skills</a>
             </Link>
           </li>
           <li className="mb-4">
             <Link href="/portfolio">
-              <a className="uppercase text-sm">Portfolio</a>
+              <a className="uppercase text-xs">Portfolio</a>
             </Link>
           </li>
           <li className="mb-4">
             <Link href="/contact">
-              <a className="uppercase text-sm">Contact</a>
+              <a className="uppercase text-xs">Contact</a>
             </Link>
           </li>
         </ul>
@@ -113,27 +113,27 @@ export default () => (
       <div className="hidden lg:block">
         <ul className="flex-col">
           <li>
-            <a href="#" className="uppercase text-sm">
+            <a href="#" className="uppercase text-xs">
               T
             </a>
           </li>
           <li>
-            <a href="#" className="uppercase text-sm">
+            <a href="#" className="uppercase text-xs">
               I
             </a>
           </li>
           <li>
-            <a href="#" className="uppercase text-sm">
+            <a href="#" className="uppercase text-xs">
               F
             </a>
           </li>
           <li>
-            <a href="#" className="uppercase text-sm">
+            <a href="#" className="uppercase text-xs">
               G
             </a>
           </li>
           <li>
-            <a href="#" className="uppercase text-sm">
+            <a href="#" className="uppercase text-xs">
               M
             </a>
           </li>
