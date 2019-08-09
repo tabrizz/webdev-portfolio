@@ -17,9 +17,12 @@ body {
   @apply w-full;
 }
 
+.fullname-container {
+  height: calc(100vh - 96px);
+}
+
 .fullname-logo {
   font-family: "Permanent Marker", cursive;
-  font-size: 3rem;
   background: linear-gradient(311deg, #d70070, #e000ec, #00c5ff, #00f560);
   background-size: 800% 800%;
   -webkit-text-fill-color: transparent;
